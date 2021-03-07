@@ -20,6 +20,13 @@ h3 {
   margin: 0.1rem;
 }
 
+.pagination {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* carousel */
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
