@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'jxw$k#8#x%0tkse%(4w&_9%5#^ia8(v$u+^a^^io99_m&9ny-l'
+SECRET_KEY = os.environ.get('PROSHOP_DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'smj-shop.herokuapp.com']
 
 
 # Application definition
@@ -83,6 +83,7 @@ SIMPLE_JWT = {
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -124,7 +125,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'proshop', 
         'USER': 'mossy82',
-        'PASSWORD': 'GateRust1',
+        'PASSWORD': os.environ.get('DB_PASS'),
         'HOST': 'proshop-identifier.cphdicnfs59z.us-east-2.rds.amazonaws.com',
         'PORT': '5432'
     }
@@ -175,15 +176,19 @@ STATICFILES_DIRS = [
     BASE_DIR / 'frontend/build/static'
 ]
 
-MEDIA_ROOT = 'static/images'
+MEDIA_ROOT = BASE_DIR / 'static/images'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-AWS_ACCESS_KEY_ID = 'AKIAXIF5V4XPPIUBAXUN'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
 AWS_STORAGE_BUCKET_NAME = 'proshop-bucket82'
 
 AWS_QUERYSTRING_AUTH = False
+
+if os.getcwd() == '/app':
+    DEBUG = False
