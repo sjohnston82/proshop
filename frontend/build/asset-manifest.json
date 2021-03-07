@@ -1,8 +1,14 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.4a6206b5.chunk.css",
     "main.js": "/static/js/main.55ac7837.chunk.js",
     "main.js.map": "/static/js/main.55ac7837.chunk.js.map",
+=======
+    "main.css": "/static/css/main.4cc38a92.chunk.css",
+    "main.js": "/static/js/main.d7d12310.chunk.js",
+    "main.js.map": "/static/js/main.d7d12310.chunk.js.map",
+>>>>>>> parent of beda18f (some styling)
     "runtime-main.js": "/static/js/runtime-main.4258ee4e.js",
     "runtime-main.js.map": "/static/js/runtime-main.4258ee4e.js.map",
     "static/js/2.1e245e8f.chunk.js": "/static/js/2.1e245e8f.chunk.js",
@@ -10,13 +16,22 @@
     "static/js/3.b38d4b03.chunk.js": "/static/js/3.b38d4b03.chunk.js",
     "static/js/3.b38d4b03.chunk.js.map": "/static/js/3.b38d4b03.chunk.js.map",
     "index.html": "/index.html",
+<<<<<<< HEAD
     "static/css/main.4a6206b5.chunk.css.map": "/static/css/main.4a6206b5.chunk.css.map",
+=======
+    "static/css/main.4cc38a92.chunk.css.map": "/static/css/main.4cc38a92.chunk.css.map",
+>>>>>>> parent of beda18f (some styling)
     "static/js/2.1e245e8f.chunk.js.LICENSE.txt": "/static/js/2.1e245e8f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4258ee4e.js",
     "static/js/2.1e245e8f.chunk.js",
+<<<<<<< HEAD
     "static/css/main.4a6206b5.chunk.css",
     "static/js/main.55ac7837.chunk.js"
+=======
+    "static/css/main.4cc38a92.chunk.css",
+    "static/js/main.d7d12310.chunk.js"
+>>>>>>> parent of beda18f (some styling)
   ]
 }
