@@ -1,13 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.4cc38a92.chunk.css",
-<<<<<<< HEAD
     "main.js": "/static/js/main.55ac7837.chunk.js",
     "main.js.map": "/static/js/main.55ac7837.chunk.js.map",
-=======
-    "main.js": "/static/js/main.d7d12310.chunk.js",
-    "main.js.map": "/static/js/main.d7d12310.chunk.js.map",
->>>>>>> parent of beda18f... some styling
     "runtime-main.js": "/static/js/runtime-main.4258ee4e.js",
     "runtime-main.js.map": "/static/js/runtime-main.4258ee4e.js.map",
     "static/js/2.1e245e8f.chunk.js": "/static/js/2.1e245e8f.chunk.js",
@@ -22,10 +17,6 @@
     "static/js/runtime-main.4258ee4e.js",
     "static/js/2.1e245e8f.chunk.js",
     "static/css/main.4cc38a92.chunk.css",
-<<<<<<< HEAD
     "static/js/main.55ac7837.chunk.js"
-=======
-    "static/js/main.d7d12310.chunk.js"
->>>>>>> parent of beda18f... some styling
   ]
 }
