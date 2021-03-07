@@ -40,7 +40,9 @@ function HomeScreen({history}) {
               </Col>
             ))}
           </Row>
-          <Paginate page={page} pages={pages} keyword={keyword}  />
+          <div>
+            <Paginate page={page} pages={pages} keyword={keyword} className='pagination' />
+          </div>
         </div>
       }
       
